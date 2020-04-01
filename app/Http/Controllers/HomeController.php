@@ -2,12 +2,15 @@
 
 namespace App\Http\Controllers;
 
+use App\Fee;
+
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
 {
     public function index()
     {
-        return view('nyanumba.welcome');
+        $fees = Fee::has('students')->get();
+        return view('nyanumba.welcome')->with('fees',$fees);
     }
 }

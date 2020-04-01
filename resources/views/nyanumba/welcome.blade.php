@@ -20,6 +20,36 @@
                 </div>
             </div>
         </div>
+        <div class="col-md-8 mt-5">
+            <div class="card">
+                <div class="card-header">
+                    <h4 class="text-center">Recent Fee Payments</h4>
+                </div>
+                <div class="card-body">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Student Name</th>
+                                <th>Date of Payment</th>
+                                <th>Amount</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach ($fees as $item)
+                            <tr>
+
+                                    <td> {{ $item->students->full_name }} </td>
+                                    <td> {{ $item->date_of_payment }} </td>
+                                    <td> {{ $item->amount }} </td>
+
+
+                            </tr>
+                             @endforeach
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 
