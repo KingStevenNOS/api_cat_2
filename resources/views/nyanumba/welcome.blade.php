@@ -22,12 +22,12 @@
         </div>
         <div class="col-md-8 mt-5">
             <div class="card">
-                <div class="card-header">
+                <div class="card-header bg-primary text-white">
                     <h4 class="text-center">Recent Fee Payments</h4>
                 </div>
-                <div class="card-body">
-                    <table class="table">
-                        <thead>
+                <div class="card-body bg-dark">
+                    <table class="table text-white ">
+                        <thead class="bg-secondary" >
                             <tr>
                                 <th>Student Name</th>
                                 <th>Date of Payment</th>
